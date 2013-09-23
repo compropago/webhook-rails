@@ -32,44 +32,44 @@ La notificación está acompañada de un objeto en JSON que contiene la informac
 		 "object": "charge",
 		 "created": "2013-09-17T23:02:41.860Z",
 		 "paid": true,
-		 "amount": <span class="response_string">"1000.00"</span>,
-		 "currency": <span class="response_string">"mxn"</span>,
-		 "refunded": <span class="response_boolean">false</span>,
-		 "fee": <span class="response_string">"32.00"</span>,
+		 "amount": "1000.00",
+		 "currency": "mxn",
+		 "refunded": false,
+		 "fee": "32.00",
 
 		 "fee_details": [
 		   {
-		    "amount": <span class="response_string">"32.00"</span>,
-		    "currency": <span class="response_string">"mxn"</span>,
-		    "type": <span class="response_string">"compropago_fee"</span>,
-		    "description": <span class="response_string">"Honorarios de ComproPago"</span>,
-		    "application": <span class="response_boolean">null</span>,
-		    "amount_refunded": <span class="response_boolean">0</span>
+		    "amount": "32.00",
+		    "currency": "mxn",
+		    "type": "compropago_fee",
+		    "description": "Honorarios de ComproPago",
+		    "application": null,
+		    "amount_refunded":0
 		   }
 		 ],
 
 		 "payment_details": [
 		   {
-		    "object": <span class="response_string">"cash"</span>,
-		    "store": <span class="response_string">"Waltmart"</span>,
-		    "country": <span class="response_string">"MX"</span>,
-		    "product_id": <span class="response_string">"FBIPC5"</span>,
-		    "product_price": <span class="response_string">"1000.00"</span>,
-		    "product_name": <span class="response_string">"Nokia 5520"</span>,
-		    "image_url": <span class="response_string">"https://aws.amazon.com/5f4373"</span>,
-		    "success_url": <span class="response_string">"https://mystore.com/success-url"</span>,
-		    "customer_name": <span class="response_string">"Alejandra Leyva"</span>,
-		    "customer_email": <span class="response_string">"ale.leyva231@gmail.com"</span>,
-		    "customer_phone": <span class="response_string">"2221515467"</span>
+		    "object": "cash",
+		    "store": "Walmart",
+		    "country": "MX",
+		    "product_id": "FBIPC",
+		    "product_price": "1000.0",
+		    "product_name": "Nokia 552",
+		    "image_url": "https://aws.amazon.com/5f437",
+		    "success_url": "https://mystore.com/success-ur",
+		    "customer_name": "Alejandra Leyva",
+		    "customer_email": "ale.leyva231@gmail.com",
+		    "customer_phone": "2221515467"
 		   }
 		 ],
 
-		 "captured": <span class="response_boolean">true</span>,
-		 "failure_message": <span class="response_boolean">null</span>,
-		 "failure_code": <span class="response_boolean">null</span>,
-		 "amount_refunded": <span class="response_boolean">0</span>,
-		 "description": <span class="response_string">"Estado del pago - ComproPago"</span>,
-		 "dispute": <span class="response_boolean">null</span>
+		 "captured": true,
+		 "failure_message": null,
+		 "failure_code": null,
+		 "amount_refunded": 0,
+		 "description": "Estado del pago - ComproPago",
+		 "dispute": null
 		}
 	  }
     }
@@ -94,7 +94,8 @@ Configura el controlador que se convertirá en receptor de Webhook:
 
 ## Routes
 Configura la ruta de la acción Receiver para aceptar llamadas POST.
-	match "webhooks/receiver" => "webhooks#receiver", :via => :post
+
+    match "webhooks/receiver" => "webhooks#receiver", :via => :post
 
 ##Información Adicional
 Prueba si tu Webhook está recibiendo notificaciones en la sección **panel/webhooks** dentro del Panel de Control en tu cuenta de ComproPago.
