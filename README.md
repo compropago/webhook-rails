@@ -23,8 +23,8 @@ Cada vez que alguno de los siguientes eventos ocurra, te mandaremos una notifica
 ## Controllers
 Configura el controlador que se convertirá en receptor de Webhook:
 <pre>
-  <code>
-	class WebhooksController < ApplicationController
+<code>
+	"class WebhooksController < ApplicationController
 
   	  ## Si tu APP no usa Rails 4, OMITE la siguiente línea:
   	  skip_before_action :verify_authenticity_token, only: [:receiver]
@@ -37,8 +37,8 @@ Configura el controlador que se convertirá en receptor de Webhook:
      	## Haz algo con data_json, por ejemplo:
      	## @payment = Payment.find_by_id(data_json['data']['object']['id'].to_i)
   	  end
-	end
-  </code>
+	end"
+</code>
 </pre>
 
 ## Routes
