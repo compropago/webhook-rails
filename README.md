@@ -23,15 +23,15 @@ Cada vez que alguno de los siguientes eventos ocurra, te mandaremos una notifica
 La notificación está acompañada de un objeto en JSON que contiene la información del evento recibido.
 
 	{
-	  "type": <span class="response_type">"charge.pending"</span>,
-	  "object": <span class="response_string">"event"</span>,
+	  "type": "charge.pending",
+	  "object": "event",
 
 	  "data": {
 		"object": {
-		 "id": <span class="response_string">"ch_2a6dc1c2-45e6-4a95-85e0-c111acc8dfc6"</span>,
-		 "object": <span class="response_string">"charge"</span>,
-		 "created": <span class="response_string">"2013-09-17T23:02:41.860Z"</span>,
-		 "paid": <span class="response_boolean">true</span>,
+		 "id": "ch_2a6dc1c2-45e6-4a95-85e0-c111acc8dfc6",
+		 "object": "charge",
+		 "created": "2013-09-17T23:02:41.860Z",
+		 "paid": true,
 		 "amount": <span class="response_string">"1000.00"</span>,
 		 "currency": <span class="response_string">"mxn"</span>,
 		 "refunded": <span class="response_boolean">false</span>,
