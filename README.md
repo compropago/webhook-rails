@@ -22,7 +22,7 @@ Cada vez que alguno de los siguientes eventos ocurra, te mandaremos una notifica
 
 ## Controllers
 Configura el controlador que se convertirá en receptor de Webhook:
-<pre>
+<pre><code>
 class WebhooksController < ApplicationController
 
   ## Si tu APP no usa Rails 4, OMITE la siguiente línea:
@@ -36,7 +36,8 @@ class WebhooksController < ApplicationController
      ## Haz algo con data_json, por ejemplo:
      ## @payment = Payment.find_by_id(data_json['data']['object']['id'].to_i)
   end
-end</pre>
+end
+</code></pre>
 
 ## Routes
 Configura la ruta de la acción Receiver para aceptar llamadas POST.
