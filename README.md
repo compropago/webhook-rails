@@ -41,9 +41,7 @@ end
 
 ## Routes
 Configura la ruta de la acción Receiver para aceptar llamadas POST.
-<pre>
-match "webhooks/receiver" => "webhooks#receiver", :via => :post
-</pre>
+<pre><code>match "webhooks/receiver" => "webhooks#receiver", :via => :post</code></pre>
 
 ##Información Adicional
 Prueba si tu Webhook está recibiendo notificaciones en la sección **panel/webhooks** dentro del Panel de Control de tu cuenta en ComproPago.
