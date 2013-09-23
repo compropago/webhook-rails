@@ -36,8 +36,7 @@ class WebhooksController < ApplicationController
      ## Haz algo con data_json, por ejemplo:
      ## @payment = Payment.find_by_id(data_json['data']['object']['id'].to_i)
   end
-end
-</pre>
+end</pre>
 
 ## Routes
 Configura la ruta de la acción Receiver para aceptar llamadas POST.
