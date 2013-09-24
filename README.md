@@ -100,6 +100,7 @@ Configura la ruta de la acción Receiver para aceptar llamadas POST.
 
 ##Información Adicional
 Prueba si tu Webhook está recibiendo notificaciones en la sección **panel/webhooks** dentro del Panel de Control en tu cuenta de ComproPago. Recomendamos usar <a href="https://www.runscope.com">Runscope</a> para hacer el debugging de tu receptor de Webhooks.
+
 También puedes usar esta URL: <a href="https://webhook-rails.herokuapp.com/webhooks/receiver">https://webhook-rails.herokuapp.com/webhooks/receiver</a> para observar la respuesta que debe arrojar tu receptor.
 
 ##Soporte
