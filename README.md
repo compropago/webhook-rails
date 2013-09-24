@@ -1,5 +1,5 @@
 ## ComproPago - Webhook Receptor
-Crea un Receptor de Webhooks en Ruby on Rails para recibir notificaciones de eventos que ocurren en tu cuenta de ComproPago.
+Crea un Receptor de Webhooks en <b>Ruby on Rails</b> para recibir notificaciones de eventos que ocurren en tu cuenta de ComproPago.
 
 ## Webhooks
 Las notificaciones vía Webhook son mensajes que indican que un evento específico ha ocurrido (<i>ejemplo: un pago exitoso de uno de tus clientes</i>). Dichas notificaciones son enviadas desde ComproPago (vía HTTP POST) a una o más URL que tu determines.
@@ -99,7 +99,8 @@ Configura la ruta de la acción Receiver para aceptar llamadas POST.
     post "webhooks/receiver"
 
 ##Información Adicional
-Prueba si tu Webhook está recibiendo notificaciones en la sección **panel/webhooks** dentro del Panel de Control en tu cuenta de ComproPago. Recomendamos usar <a href="https://www.runscope.com">Runscope</a> para hacer el debugging de tu receptor de Webhooks. También puedes usar esta URL: <a href="https://webhook-rails.herokuapp.com/webhooks/receiver">https://webhook-rails.herokuapp.com/webhooks/receiver</a> para observar la respuesta que debe arrojar tu receptor.
+Prueba si tu Webhook está recibiendo notificaciones en la sección **panel/webhooks** dentro del Panel de Control en tu cuenta de ComproPago. Recomendamos usar <a href="https://www.runscope.com">Runscope</a> para hacer el debugging de tu receptor de Webhooks.
+También puedes usar esta URL: <a href="https://webhook-rails.herokuapp.com/webhooks/receiver">https://webhook-rails.herokuapp.com/webhooks/receiver</a> para observar la respuesta que debe arrojar tu receptor.
 
 ##Soporte
 Si necesitas ayuda envíanos un email a <a href="mailto:soporte@compropago.com?Subject=Soporte" target="_top">soporte@compropago.com</a>, uno de nuestros expertos estará encantado de ayudarte.
