@@ -5,9 +5,11 @@ class WebhooksController < ApplicationController
 
   def receiver
      ## Recibe el objeto de la notificación en JSON
-   data_json = JSON.parse request.body.read
-     ## Haz algo con data_json, por ejemplo:
-     ## @payment = Payment.find_by_id(data_json['data']['object']['id'].to_i)
-   render json: data_json
+    request.body.rewind
+    data_json = JSON.parse request.body.read
+    render json: data_json
+  end
+
+  def index
   end
 end
