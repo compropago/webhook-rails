@@ -24,47 +24,50 @@ La notificación está acompañada de un objeto en JSON que contiene la informac
 
 	{
 	 "id": "ch_2a6dc1c2-45e6-4a95-85e0-c111acc8dfc6",
+	 "type": "charge.pending",
 	 "object": "charge",
-	 "created": "2013-09-17T23:02:41.860Z",
+	 "created": "1424024955774",
 	 "paid": true,
 	 "amount": "1000.00",
+	 "livemode": true,
 	 "currency": "mxn",
 	 "refunded": false,
 	 "fee": "32.00",
 
-	 "fee_details": [
-	   {
+	 "fee_details": {
 	    "amount": "32.00",
 	    "currency": "mxn",
 	    "type": "compropago_fee",
 	    "description": "Honorarios de ComproPago",
 	    "application": null,
-	    "amount_refunded":0
-	   }
-	 ],
+	    "amount_refunded":0,
+	    "tax": "0.944"
+	 },	 
 
-	 "payment_details": [
-	   {
-	    "object": "cash",
-	    "store": "Walmart",
-	    "country": "MX",
-	    "product_id": "FBIPC",
-	    "product_price": "1000.0",
-	    "product_name": "Nokia 552",
+	 "order_info": {
+	 	"order_id": "FBIPC",
+	    "order_price": "1000.0",
+	    "order_name": "Nokia 552",
+	    "payment_method": "cash",
+	    "store": "OXXO",
+	    "country": "MX",	    
 	    "image_url": "https://aws.amazon.com/5f437",
-	    "success_url": "https://mystore.com/success-ur",
-	    "customer_name": "Alejandra Leyva",
-	    "customer_email": "ale.leyva231@gmail.com",
-	    "customer_phone": "2221515467"
-	   }
-	 ],
+	    "success_url": "https://mystore.com/success-ur"
+	 },	 
+
+	 "customer": {
+	 	"customer_name": "Alejandra Leyva",
+        "customer_email": "noreply@compropago.com",
+        "customer_phone": "2221515801"
+	 },
 
 	 "captured": true,
 	 "failure_message": null,
 	 "failure_code": null,
 	 "amount_refunded": 0,
 	 "description": "Estado del pago - ComproPago",
-	 "dispute": null
+	 "dispute": ,
+	 "api_version": "1.1"
     }
 
 ## Controllers
