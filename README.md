@@ -85,7 +85,11 @@ Configura el controlador que se convertirá en receptor de Webhook:
     	request.body.rewind
    		data_json = JSON.parse request.body.read
      	  ## Haz algo con data_json, por ejemplo:
-     	  ## @payment = Payment.find_by_id(data_json['data']['object']['id'].to_i)
+     	  ## - Para la neuva versión del API 
+     	  ##   @payment = Payment.find_by_id(data_json['id'].to_i)
+
+     	  ## - Para la versión anterior del API
+     	  ##   @payment = Payment.find_by_id(data_json['data']['object']['id'].to_i)
   	  end
 	end
 
