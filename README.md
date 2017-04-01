@@ -49,7 +49,7 @@ La notificación está acompañada de un objeto en JSON que contiene la informac
 	    "order_price": "1000.0",
 	    "order_name": "Nokia 552",
 	    "payment_method": "cash",
-	    "store": "OXXO",
+	    "store": "SEVEN_ELEVEN",
 	    "country": "MX",	    
 	    "image_url": "https://aws.amazon.com/5f437",
 	    "success_url": "https://mystore.com/success-ur"
